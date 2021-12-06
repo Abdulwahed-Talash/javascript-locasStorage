@@ -1,0 +1,94 @@
+
+.first-container{
+  margin-left:400px;
+  margin-top:90px;
+  width:30%;
+  box-shadow: 5px 5px 5px 5px #777777;
+  //background: #5ff;
+}
+.container1{
+  padding: 20px 25px;
+}
+#task-list{
+  font-size: 20px;
+  color: gray;
+
+}
+#newTask-div{
+  //background: tan;
+  border-bottom: 30px;
+}
+#first-input{
+  width: 100%;
+  display: block;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 8px 0;
+
+}
+#p-newTask{
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: #099999;
+  font-weight: bold;
+  display: none;
+
+  transition-timing-function: ease-in;
+
+}
+#newTask-div #second-input{
+  margin: 20px 0;
+  padding: 5px 15px;
+  background:#099999;
+  border: none;
+  border-radius: 2px;
+  color:white;
+}
+.container2{
+  border-top: 1px solid gray;
+  margin-top: -5px;
+
+}
+.container2-inside{
+  padding: 2px 25px;
+  margin-bottom: 5px;
+}
+.container2-inside p{
+  color:black !important;
+}
+.addTask{
+  margin-top: 13px;
+  /* border: 1px solid gray; */
+}
+#Clear-task{
+  margin: 20px 0;
+  padding: 5px 15px;
+  background:BLACK;
+  border: none;
+  border-radius: 2px;
+  color:white;
+}
+#addTask-ul{
+  list-style: none;
+  //border: 1px solid gray;
+  padding: 0;
+  margin: 0;
+}
+.divItem{
+  border: 1px solid #999;
+  padding:5px;
+}
+.collection-item{
+  padding: 0;
+  padding-left: 5px;
+  margin: 0;
+  float: left;
+  /* background:tan; */
+  width: 90%;
+
+}
+.delete-item{
+  color: red;
+  text-decoration: none;
+}

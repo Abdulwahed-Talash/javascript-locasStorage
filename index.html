@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="">
+    <div class="first-container">
+      <div class="container1">
+        <p id="task-list">Task list</p>
+        <div id="newTask-div">
+          <p id="p-newTask">New task</p>
+          <input type="text" name="" value="" onfocus="removeborder(this)" id="first-input" placeholder="New Task" onkeydown="enterCheak(event)">
+          <input type="button" name="" value="ADD TASK" id="second-input" onclick="create()">
+        </div>
+      </div>
+      <div class="container2">
+        <div class="container2-inside">
+          <p id="task-list">Tasks</p>
+          <input type="text" name="" value="" id="first-input" class="filter" placeholder="Filter Tasks" onfocus="removeborder(this)" onkeydown="cheakFilter(event)""> <!--  -->
+          <div class="addTask">
+            <ul id="addTask-ul">
+
+            </ul>
+          </div>
+          <input type="button" name="" value="CLEAR TASKS" id="Clear-task" onclick="clearAll()">
+        </div>
+      </div>
+    </div>
+
+
+    <script src="Js.js" charset="utf-8"></script>
+  </body>
+</html>

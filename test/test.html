@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*div {
+			background: lime;
+			width: 300px;
+			height: 400px;
+		}
+*/	</style>
+</head>
+<body>
+
+		<!-- <div id="div1">
+			
+		</div><br> -->
+
+		<!-- ------------------------------------------------------------------------- -->
+		<form action="#">
+		<label>your task: <input type="text" id="task" name=""> </label>
+		<button >save in local storage</button>
+		</form>
+
+		<!-- ------------------------------------------------------------------------- -->
+
+
+		<script type="text/javascript">
+
+
+		// -----------------------------------------------------------------------------------------------
+
+			document.querySelector('form').addEventListener('submit',function(e){
+				var task = document.getElementById('task').value;
+				let job;
+				if (localStorage.getItem('job') === null ) {
+					job = [];
+				}
+				else {
+					job = JSON.parse(localStorage.getItem('job'));  // convert the group of  string   to array to use push method  
+				}
+
+				job.push(task);
+
+				localStorage.setItem('job' , JSON.stringify(job)) // convert array to group of string Exp --> ["wahed","jamshed","omid","hamid"]
+
+				alert('task seved!');
+				
+				e.preventDefault();
+			})
+
+		// -----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+		//var name = localStorage.setItem("name","abdulwahed");
+		//var lastname = localStorage.setItem('lastname','Talash');
+	//	var arr = [34,34,'talash','talash','janm','45'];
+		//alert()
+		//console.log(typeof(arr))
+		//localStorage.setItem('id',JSON.stringify(arr))
+
+		// var obj = {
+		// 	name : 'abdulwahed',
+		// 	lastname : "talash" ,
+		// 	Fname : "nooralam",
+		// 	age :21,
+		// 	id :2324,
+		// 	second2 :{
+		// 		name :'wahed',
+		// 		fName : 'nooralam'
+		// 	}
+		// };
+		// console.log({obj})
+		// console.log(obj)
+		 //localStorage.setItem('object',obj) // output [object,object]
+
+		// localStorage.setItem('object',JSON.stringify(obj))
+
+		//  // document.getElementById('div1').innerHTML = JSON.parse(localStorage.getItem('object'));
+
+		// document.getElementById('div1').innerHTML = obj.name;
+		//  console.log(JSON.parse(localStorage.getItem('object')).name)
+
+
+
+
+	</script>
+</body>
+</html>
